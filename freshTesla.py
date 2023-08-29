@@ -131,6 +131,7 @@ while True:
                     cars.append(car)
             if len(cars) > 0:
                 msg = '\n\n'.join(['\n'.join([k + ": " + str(v) for k, v in c.items()]) for c in cars])
+                msg += '\n\n欢迎找教胖refer，立减$500，并有6k点返给你购买墙充或脚垫\n点击下单：https://www.tesla.com/referral/shuo417976\n'
                 send_email("TESLA AUTO FINDER", f"cars:\n{msg}",
                            "email_to_receive_notification@gmail.com")  # Edit this email to receive notifications
                 send_email("TESLA AUTO FINDER", f"cars:\n{msg}",
